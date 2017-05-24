@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <SurfaceView
+        android:id="@+id/recordvidio_surface_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recordvidio_surface_view"
+        android:layout_marginTop="@dimen/tv_top"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_recordvideo_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_record_play" />
+
+        <Button
+            android:id="@+id/btn_recordvideo_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_record_stop" />
+    </LinearLayout>
+
+</RelativeLayout>

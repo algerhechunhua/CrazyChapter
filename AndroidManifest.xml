@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lewa.crazychapter11"
+    android:sharedUserId="android.uid.system"
+     >
+
+     <!-- android:versionCode="111181"
+    android:versionName="vxxx...hehhe.1.0" -->
+
+    <!-- android:sharedUserId="android.uid.system" -->
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="12" />
+
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- FILE SYSTEM -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- phone state -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+
+    <application
+        android:name=".LewaTestApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.FileManagerV5StyleNew" >
+
+        <!-- 注册广播 -->
+        <receiver android:name=".MyReceiver" >
+            <intent-filter android:priority="30" >
+                <action android:name="org.crazyit.action.CRAZY_BROADCAST" />
+                <action android:name="org.crazyit.action.CRAZY_ORDER_BROADCAST" />
+                <action android:name="com.lewa.alarm.test" />
+            </intent-filter>
+
+            <intent-filter>
+                <!-- can't receive SCREEN_ON SCREEN_OFF in static receiver  -->
+<!--                 <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.SCREEN_OFF" /> -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE" /> 
+                <data  
+                    android:host="5169" 
+                    android:scheme="android_secret_code" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".MyOrderReceiver01" >
+            <intent-filter android:priority="20" >
+                <action android:name="org.crazyit.action.CRAZY_ORDER_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".MyOrderReceiver02" >
+            <intent-filter android:priority="10" >
+                <action android:name="org.crazyit.action.CRAZY_ORDER_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".LauncherReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE"/>
+                <data android:host="123789" android:scheme="android_secret_code"/>
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name=".DesktopApp"
+                  android:label="@string/str_widget_test" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_provider"/>
+        </receiver>
+
+        <!-- 注册一个 ContentProvider -->
+        <provider
+            android:name=".DictProviderTest"
+            android:authorities="org.crazyit.providers.dictprovider"
+            android:exported="true" />
+
+        <provider
+            android:name=".PeopleProvider"
+            android:authorities="com.example.peopleprovider"
+            />    
+
+        <!-- 注册 service -->
+        <service android:name=".MyFirstService" >
+            <intent-filter>
+                <action android:name="org.crazyit.service.FIRST_SERVICE" />
+            </intent-filter>
+        </service>
+        <service android:name=".ChangeService" >
+            <intent-filter>
+                <action android:name="org.crazyit.service.ALARM_CHANGEWALLPAPER_SERVICE" />
+            </intent-filter>
+        </service>
+        <service android:name=".BindService" >
+            <intent-filter>
+                <action android:name="org.crazyit.service.CRAZY_BINDSERVICE" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyService" >
+            <intent-filter>
+                <action android:name="org.crazyit.service.CRAZY_MYSERVICE" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyIntentService" >
+            <intent-filter>
+                <action android:name="org.crazyit.service.CRAZY_MYINTENTSERVICE" />
+            </intent-filter>
+        </service>
+        <service android:name=".AidlService" >
+            <intent-filter>
+                <action android:name="org.crazyit.service.CRAZY_AIDL_SERVICE" />
+            </intent-filter>
+        </service>
+        <service android:name=".MusicService" >
+            <intent-filter>
+                <action android:name="org.crazyit.service.CRAZY_MUSIC_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".LiveWallpaper"
+            android:label="@string/app_livewallpaper_name"
+            android:permission="android.permission.BIND_WALLPAPER" >
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/livewallpaper" />
+        </service>
+
+        <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name="com.lewa.crazychapter11.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OtherActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.OTHERACTIVITY" />
+
+                <category android:name="android.intent.category.OTHERACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="www.fkjava.org"
+                    android:mimeType="abc/xyz"
+                    android:path="/mypath"
+                    android:port="8888"
+                    android:scheme="lee" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ExpandableListActivityTest"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_expand_name" >
+        </activity>
+        <activity
+            android:name=".PreferenceActivityTest"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_prefer_name" >
+        </activity>
+        <activity
+            android:name=".SelectBookActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_selectbook_name" >
+        </activity>
+        <activity
+            android:name=".ValuesResTest"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>        
+        <activity
+            android:name=".ClipDrawableTest"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".LewaBitmapTest"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".LewaDrawView"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".HandDraw"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".MoveBack"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".SurfaceViewTest"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".ReadSdCardActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".DBTest"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".Dict"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".ResultActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".GestureZoom"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".GestureFlip"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".DictResolvertTest"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".BindServiceTest"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".TelephonyStatus"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".BlockMain"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".AlarmServiceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".BroadcastMain"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".MediaPlayerMain"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".MediaRecordMain"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".CaptureImage"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".RecordVideo"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_res" >
+        </activity>
+        <activity
+            android:name=".HTMLActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name_res" >
+        </activity>
+        
+        <activity
+            android:name=".HTMLMainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name_res" >
+        </activity>
+
+        <activity
+            android:name=".TestMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/str_test_title"
+            android:theme="@style/theme.test"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.TEST_ACTIVITY" />
+                
+                <category android:name="android.intent.category.TEST_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="UsageStatsActivity" 
+                  android:label="@string/str_usage_stats_label"
+                  android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.USAGE_STATS_ACTIVITY" />
+
+                <category android:name="android.intent.category.USAGE_STATS_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ProviderMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/str_test_title"
+            android:theme="@style/theme.test"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_MAIN_ACTIVITY" />
+                
+                <category android:name="android.intent.category.PROVIDER_MAIN_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        
+
+        <activity
+            android:name=".FragmentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/str_title_fragment"
+            android:theme="@style/theme.test"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.FRAGMENT_ACTIVITY" />
+                
+                <category android:name="android.intent.category.FRAGMENT_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Fragment2MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/str_title_fragment"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.FRAGMENT2_ACTIVITY" />
+                
+                <category android:name="android.intent.category.FRAGMENT2_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

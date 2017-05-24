@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <!--
+    <EditText
+        android:id="@+id/key"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:textColor="@drawable/my_image" />
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_btn_insert" />
+    <ListView
+        android:id="@+id/result_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="#000"
+        android:dividerHeight="1px" />
+    -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_manager_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_manager_block" />
+
+        <Button
+            android:id="@+id/btn_sendmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_send_msg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:text="@string/str_number" />
+
+        <EditText
+            android:id="@+id/sms_edit_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:digits="0123456789"
+            android:textColor="@drawable/my_image" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:text="@string/str_content" />
+
+        <EditText
+            android:id="@+id/sms_edit_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:textColor="@drawable/my_image" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_service_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_service_play" />
+
+        <Button
+            android:id="@+id/btn_service_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_service_stop" />
+
+        <Button
+            android:id="@+id/btn_service_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_service_up" />
+
+        <Button
+            android:id="@+id/btn_service_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_service_down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ToggleButton
+            android:id="@+id/btn_service_mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:textOff="@string/str_service_off"
+            android:textOn="@string/str_service_on" />
+
+        <Button
+            android:id="@+id/btn_service_settime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_service_settime" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_service_changewallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_service_changewallpaper" />
+        <Button
+            android:id="@+id/btn_service_stopwallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_service_stopwallpaper" />
+    </LinearLayout>
+
+</LinearLayout>

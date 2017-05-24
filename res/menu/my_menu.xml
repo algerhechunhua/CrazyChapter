@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:title="@string/str_color">
+        <menu>
+            <group android:checkableBehavior="single" >
+                <item
+                    android:id="@+id/red"
+                    android:title="@string/str_color_red"/>
+                <item
+                    android:id="@+id/green"
+                    android:title="@string/str_color_green"/>
+                <item
+                    android:id="@+id/blue"
+                    android:title="@string/str_color_blue"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/str_width">
+        <menu>
+            <group android:checkableBehavior="single" >
+                <item
+                    android:id="@+id/width_1"
+                    android:title="@string/str_width_1"/>
+                <item
+                    android:id="@+id/width_3"
+                    android:title="@string/str_width_3"/>
+                <item
+                    android:id="@+id/width_5"
+                    android:title="@string/str_width_5"/>
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/blur"
+        android:title="@string/str_blur"/>
+    <item
+        android:id="@+id/emboss"
+        android:title="@string/str_emboss"/>
+
+</menu>

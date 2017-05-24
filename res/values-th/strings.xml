@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+
+    <string name="app_name">เข็มทิศ</string>
+    <string name="north">เหนือ</string>
+    <string name="northeast">ตะวันออกเฉียงเหนือ</string>
+    <string name="east">ตะวันตก</string>
+    <string name="southeast">ตะวันออกเฉียงใต้</string>
+    <string name="south">ใต้</string>
+    <string name="southwest">ตะวันตกเฉียงใต้</string>
+    <string name="west">ตะวันตก</string>
+    <string name="northwest">ตะวันตกเฉียงเหนือ</string>
+    <string name="accuracy_prompt">พื้นที่นี้อาจมีสนามแม่เหล็กรบกวน โปรดเขย่าโทรศัพท์เพื่อปรับเข็มทิศ</string>
+
+</resources>

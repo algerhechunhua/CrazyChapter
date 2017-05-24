@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/mm01"
+        android:duration="83"/>
+    <item
+        android:drawable="@drawable/mm02"
+        android:duration="83"/>
+    <item
+        android:drawable="@drawable/dahai"
+        android:duration="83"/>
+    <item
+        android:drawable="@drawable/fangzi"
+        android:duration="83"/>
+    <item
+        android:drawable="@drawable/hushui01"
+        android:duration="83"/>
+
+</animation-list>

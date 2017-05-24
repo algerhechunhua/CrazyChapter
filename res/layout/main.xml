@@ -1,0 +1,230 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    >
+
+     <!-- tools:context=".MainActivity" -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_btn_send" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_cancel" />
+
+        <Button
+            android:id="@+id/btn_start_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_start_game" />
+
+        <Button
+            android:id="@+id/btn_start_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_start_service" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_btn_read" />
+
+        <Button
+            android:id="@+id/btn_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_btn_write" />
+
+        <Button
+            android:id="@+id/btn_read_sdcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_btn_read_sdcard" />
+
+        <Button
+            android:id="@+id/btn_dict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_btn_entry_dict" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edit_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_btn_test" />
+
+        <Button
+            android:id="@+id/btn_people_provider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_btn_people_provider" />    
+
+        <Button
+            android:id="@+id/btn_usagestats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_btn_usagestats" />    
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/show_txt"
+        style="@style/style1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:editable="false" />
+
+    <EditText
+        android:id="@+id/etNum"
+        style="@style/style3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:digits="0123456789"
+        android:editable="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.lewa.crazychapter11.MyButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickHandler"
+            android:text="@string/str_touch_me" />
+
+        <Button
+            android:id="@+id/btn_systemservice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_systemservice" />
+
+        <Button
+            android:id="@+id/btn_get_blocklist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_get_blocklist" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_broadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_broadcast" />
+
+        <Button
+            android:id="@+id/btn_mediaplayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_mediaplayer" />
+
+        <Button
+            android:id="@+id/btn_mediarecorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_mediarecorder" />
+
+        <Button
+            android:id="@+id/btn_cameramain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_cameramain" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/btn_recordvideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_recordvideo" />
+        <Button
+            android:id="@+id/btn_mysql"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_mysql" />
+        <Button
+            android:id="@+id/btn_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_btn_fragment" />    
+        <TextView
+                android:id="@+id/tv_mysql"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_get_color_title" />
+    </LinearLayout>
+    <!-- 联系人文本框 -->
+
+    <EditText
+        android:id="@+id/show"
+        style="@style/style2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:textColor="@drawable/my_image" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:textColor="@drawable/my_image" />
+
+    <Button
+        android:id="@+id/btn_lookup_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_lookup_contact" />
+
+    <com.lewa.crazychapter11.MyView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

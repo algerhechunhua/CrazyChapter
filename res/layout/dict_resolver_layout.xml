@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+     >
+
+    <TextView
+        android:id="@+id/resolver_word_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dict_word_title" />
+    
+    <EditText
+        android:id="@+id/resolver_word"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:textColor="@drawable/my_image" />
+    
+    <TextView
+        android:id="@+id/resolver_detail_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dict_detail_title" />
+    <EditText
+        android:id="@+id/resolver_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:textColor="@drawable/my_image" />
+    
+    <TextView
+        android:id="@+id/resolver_detail_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dict_key_title" />
+    
+    <EditText
+        android:id="@+id/resolver_key"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:textColor="@drawable/my_image" />
+     
+    <Button
+        android:id="@+id/btn_resolver_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_btn_insert" />
+    
+    <Button
+        android:id="@+id/btn_resolver_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_btn_search" />
+    
+    <!-- 添加电话号码 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_title_name" />    
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:textColor="@drawable/my_image" />
+    
+    </LinearLayout>
+     
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_title_phone" />
+     <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:textColor="@drawable/my_image" />
+     </LinearLayout>
+     
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_title_email" />
+     <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:textColor="@drawable/my_image" />
+     </LinearLayout>
+    
+    <Button
+        android:id="@+id/btn_contact_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_btn_contact_search" />
+    <Button
+        android:id="@+id/btn_contact_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_btn_contact_add" />
+    
+</LinearLayout>

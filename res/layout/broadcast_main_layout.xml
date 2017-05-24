@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <!--
+    <EditText
+        android:id="@+id/word"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:textColor="@drawable/my_image" />
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_btn_search" />
+
+    <ListView
+        android:id="@+id/result_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="#000"
+        android:dividerHeight="1px" />
+    -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_send_broadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_send_broadcast" />
+
+        <Button
+            android:id="@+id/btn_send_order_broadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_send_order_broadcast" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_music_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_playable" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_music_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_pause" />
+        
+        <Button
+            android:id="@+id/btn_music_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_music_next" />
+        <Button
+            android:id="@+id/btn_music_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_music_prev" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/music_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_get_color_title" />
+
+            <TextView
+                android:id="@+id/music_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_get_color_title" />
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

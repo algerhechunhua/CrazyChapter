@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+
+    <string name="app_name">"La Bàn"</string>
+    <string name="north">"Bắc"</string>
+    <string name="northeast">"Đông Bắc"</string>
+    <string name="east">"Đông"</string>
+    <string name="southeast">"Đông Nam"</string>
+    <string name="south">"Nam"</string>
+    <string name="southwest">"Tây Nam"</string>
+    <string name="west">"Tây"</string>
+    <string name="northwest">"Tây Bắc"</string>
+    <string name="accuracy_prompt">"Vùng lân cận bị nhễm sóng từ trường, Xin lắc điện thoại để điều chỉnh La bàn" </string>
+
+</resources>

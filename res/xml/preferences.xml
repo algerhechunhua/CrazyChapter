@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RingtonePreference
+        android:key="ring_key"
+        android:ringtoneType="all"
+        android:showDefault="true"
+        android:showSilent="true"
+        android:summary="@string/str_ring_sel"
+        android:title="@string/str_ring_set" >
+    </RingtonePreference>
+
+    <PreferenceCategory android:title="@string/str_person_set" >
+        <EditTextPreference
+            android:dialogTitle="@string/str_input_name_config"
+            android:key="name"
+            android:summary="@string/str_input_name_disc"
+            android:title="@string/str_input_name" />
+
+        <ListPreference
+            android:dialogTitle="ListPreference"
+            android:entries="@array/gender_name_list"
+            android:entryValues="@array/gender_value_list"
+            android:key="gender"
+            android:summary="@string/str_gender_sel"
+            android:title="@string/str_gender" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/str_sys_set" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="autoSvae"
+            android:summaryOff="@string/str_auto_off"
+            android:summaryOn="@string/str_auto_on"
+            android:title="@string/str_auto_save" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

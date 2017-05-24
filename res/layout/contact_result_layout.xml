@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ExpandableListView
+        android:id="@+id/contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="@dimen/contact_left_margin"
+        android:layout_marginRight="@dimen/contact_right_margin"
+        android:clipToPadding="true"
+        android:layout_weight="1"
+        android:divider="@drawable/list_divider_holo_light"
+        android:overScrollMode="always" />
+
+</LinearLayout>

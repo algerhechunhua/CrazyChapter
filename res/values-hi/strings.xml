@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+
+    <string name="app_name">कंपास</string>
+    <string name="north">उत्तर</string>
+    <string name="northeast">उत्तर-पूर्व</string>
+    <string name="east">पूर्व</string>
+    <string name="southeast">दक्षिण - पूर्व</string>
+    <string name="south">दक्षिण</string>
+    <string name="southwest">दक्षिण पश्चिमी</string>
+    <string name="west">पश्चिमी</string>
+    <string name="northwest">उत्तर-पश्चिमी</string>
+    <string name="accuracy_prompt">निगत चुंबकीय हस्तक्षेप है,बाएं-दाएं की ओर फ़ोन को हिलने से कंपास को कैलिब्रेट करें</string>
+
+</resources>

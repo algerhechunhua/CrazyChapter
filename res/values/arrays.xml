@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="light_strength_list">
+        <item>1 level</item>
+        <item>2 level</item>
+        <item>3 level</item>
+        <item>4 level</item>
+    </string-array>
+    <string-array name="light_value_list">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+    </string-array>
+    <string-array name="gender_name_list">
+        <item>man</item>
+        <item>woman</item>
+    </string-array>
+    <string-array name="gender_value_list">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="string_arr">
+        <item>@string/c1</item>
+        <item>@string/c2</item>
+        <item>@string/c3</item>
+        <item>@string/c4</item>
+        <item>@string/c5</item>
+        <item>@string/c6</item>
+        <item>@string/c7</item>
+        <item>@string/c8</item>
+        <item>@string/c9</item>
+    </string-array>
+
+    <array name="plain_arr">
+        <item>@color/c1</item>
+        <item>@color/c2</item>
+        <item>@color/c3</item>
+        <item>@color/c4</item>
+        <item>@color/c5</item>
+        <item>@color/c6</item>
+        <item>@color/c7</item>
+        <item>@color/c8</item>
+        <item>@color/c9</item>
+    </array>
+    
+    <array name="statusNames">
+        <item>status1:</item>
+        <item>status2:</item>
+        <item>status3:</item>
+        <item>status4:</item>
+        <item>status5:</item>
+        <item>status6:</item>
+        <item>status7:</item>
+        <item>status8:</item>
+        <item>status9:</item>
+        <item>status10:</item>
+    </array> 
+    
+    <array name="simState">
+        <item>simState 1</item>
+        <item>simState 2</item>
+        <item>simState 3</item>
+        <item>simState 4</item>
+        <item>simState 5</item>
+        <item>simState 6</item>
+        <item>simState 7</item>
+        <item>simState 8</item>
+        <item>simState 9</item>
+    </array>
+    
+    <array name="phoneType">
+        <item>phoneType 1</item>
+        <item>phoneType 2</item>
+        <item>phoneType 3</item>
+        <item>phoneType 4</item>
+        <item>phoneType 5</item>
+    </array>
+
+    <string-array name="usage_stats_display_order_types">
+        <item>Usage time</item>
+        <item>Last time used</item>
+        <item>App name</item>
+    </string-array>
+
+</resources>

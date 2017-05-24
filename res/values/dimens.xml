@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="spacing">8dp</dimen>
+    <dimen name="cell_width">60dp</dimen>
+    <dimen name="cell_height">66dp</dimen>
+    <dimen name="title_font_size">18dp</dimen>
+    <dimen name="db_textview">30dp</dimen>
+    <dimen name="detail_top">30dp</dimen>
+    <dimen name="gap_left">10dp</dimen>
+    <dimen name="contact_left_margin">10dp</dimen>
+    <dimen name="contact_right_margin">10dp</dimen>
+
+</resources>

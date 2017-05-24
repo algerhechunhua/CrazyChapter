@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+     >
+     <!-- tools:context=".MainActivity" -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/adjust" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv"
+            android:layout_marginTop="@dimen/tv_top"
+            android:gravity="center_horizontal"
+            android:text="@string/adjust_tv"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/tv_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

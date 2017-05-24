@@ -1,0 +1,39 @@
+<!DOCTYPE html>  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head>  
+    <meta name="viewport" content=""/>  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+    <title>FamilyAlbum</title>  
+      
+    <link rel="stylesheet" type="text/css" href="css/main.css"  media="all"/>  
+  
+    <script type="text/javascript" src="lib/jquery-1.7.2.min.js"> </script>  
+    <script type="text/javascript" src="lib/jquery-ui-1.8.23.custom.min.js"> </script>  
+    <script type="text/javascript" src="lib/jquery.confirm.js"> </script>        
+    <script type="text/javascript" src="js/main.js"> </script>  
+      
+<script type="text/javascript">  
+    function myFunction()  
+    {  
+        //document.getElementById("demo").innerHTML="My First JavaScript Function";  
+        var videos = document.getElementById('videoTag');   
+        videos.loop = 'loop';  
+        videos.play();  
+          
+    }  
+</script>  
+</head>  
+  
+<body>  
+    <!-- 3pg movie can play also  -->
+    <!-- <video id="videoTag" src="file:///storage/emulated/0/big_buck_bunny.mp4" controls="controls" height="210px" width="380px"></video>   -->
+    <video id="videoTag" src="file:///android_asset/ihone6s.mp4" controls="controls" height="210px" width="380px"></video>  
+    <!-- <source src="intro_854x480.mp4" type="video/mp4"> -->
+  
+<button type="button" onclick="myFunction()">点击这里</button>
+  
+<p id="demo">A Paragraph.</p>   
+<p id="demo">获取远程service颜色</p>
+  
+</body>  
+</html>  

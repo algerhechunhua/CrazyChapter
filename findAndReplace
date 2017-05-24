@@ -1,0 +1,17 @@
+#!/bin/bash
+
+from_file=$1
+src_content=$2
+dir_content=$3
+
+#echo "from_file=$from_file"
+#echo "src_content=$src_content"
+#echo "dir_content=$dir_content"
+
+#tar zvfc folder.tar.gz folder
+#tar zvfx folder
+
+#example
+#find -name '*.java'|xargs perl -pi -e 's|com.lewa.crazychapter11|com.lewa.crazychapter22|g'
+
+find -name "*.${from_file}"|xargs perl -pi -e "s|${src_content}|${dir_content}|g"

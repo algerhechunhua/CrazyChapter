@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android" name="Android">
+      <configuration />
+    </facet>
+    <facet type="android" name="Android2">
+      <configuration />
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" generated="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="libs15" level="project" />
+    <orderEntry type="library" name="android-support-v42" level="project" />
+    <orderEntry type="library" name="libs10" level="project" />
+    <orderEntry type="library" name="android-support-v47" level="project" />
+    <orderEntry type="library" name="lib2" level="project" />
+    <orderEntry type="library" name="libs12" level="project" />
+    <orderEntry type="library" name="libs19" level="project" />
+    <orderEntry type="library" name="libs6" level="project" />
+    <orderEntry type="library" name="android-support-v131" level="project" />
+    <orderEntry type="library" name="libs1" level="project" />
+    <orderEntry type="library" name="libs14" level="project" />
+    <orderEntry type="library" name="libs7" level="project" />
+    <orderEntry type="library" name="android-support-v45" level="project" />
+    <orderEntry type="library" name="libs4" level="project" />
+    <orderEntry type="library" name="android-support-v4" level="project" />
+    <orderEntry type="library" name="libs8" level="project" />
+    <orderEntry type="library" name="libs9" level="project" />
+    <orderEntry type="library" name="libs5" level="project" />
+    <orderEntry type="library" name="android-support-v13" level="project" />
+    <orderEntry type="library" name="libs11" level="project" />
+    <orderEntry type="library" name="android-support-v48" level="project" />
+    <orderEntry type="library" name="android-support-v44" level="project" />
+    <orderEntry type="library" name="android-support-v43" level="project" />
+    <orderEntry type="library" name="android-support-v46" level="project" />
+    <orderEntry type="library" name="libs2" level="project" />
+    <orderEntry type="library" name="libs13" level="project" />
+    <orderEntry type="library" name="android-support-v41" level="project" />
+    <orderEntry type="library" name="libs16" level="project" />
+    <orderEntry type="module" module-name="lib2" />
+    <orderEntry type="module" module-name="tests25" />
+    <orderEntry type="module" module-name="tests49" />
+    <orderEntry type="module" module-name="SnapdragonCamera" />
+    <orderEntry type="module" module-name="graphics" />
+    <orderEntry type="module" module-name="tests37" />
+    <orderEntry type="module" module-name="media1" />
+    <orderEntry type="module" module-name="test2" />
+    <orderEntry type="module" module-name="benchmarks1" />
+    <orderEntry type="module" module-name="dicttool" />
+    <orderEntry type="module" module-name="actionbar_4.4" />
+    <orderEntry type="module" module-name="Camera2" />
+    <orderEntry type="module" module-name="inputmethodtests" />
+    <orderEntry type="module" module-name="Gallery2" />
+    <orderEntry type="module" module-name="coretests" />
+    <orderEntry type="module" module-name="telephony" />
+    <orderEntry type="module" module-name="core2" />
+    <orderEntry type="module" module-name="notificationtests" />
+    <orderEntry type="module" module-name="LewaThemeLib" />
+    <orderEntry type="module" module-name="escape" />
+    <orderEntry type="module" module-name="actionbar" />
+    <orderEntry type="module" module-name="core" />
+    <orderEntry type="module" module-name="systemproperties" />
+    <orderEntry type="module" module-name="LewaCamera" />
+    <orderEntry type="module" module-name="tests47" />
+    <orderEntry type="module" module-name="WallpaperPicker" />
+    <orderEntry type="module" module-name="v4" />
+    <orderEntry type="module" module-name="telephony1" />
+    <orderEntry type="module" module-name="graphicstests" />
+    <orderEntry type="module" module-name="bridge" />
+    <orderEntry type="module" module-name="portability" />
+    <orderEntry type="module" module-name="LewaDownloadProvider" />
+    <orderEntry type="module" module-name="telephonytests" />
+    <orderEntry type="module" module-name="tests13" />
+    <orderEntry type="module" module-name="actionbar" />
+    <orderEntry type="module" module-name="telephony" />
+    <orderEntry type="module" module-name="tests42" />
+    <orderEntry type="module" module-name="media1" />
+    <orderEntry type="module" module-name="SnapdragonCamera" />
+    <orderEntry type="module" module-name="Gallery2" />
+    <orderEntry type="module" module-name="tests38" />
+    <orderEntry type="module" module-name="notificationtests" />
+    <orderEntry type="module" module-name="WallpaperPicker" />
+    <orderEntry type="module" module-name="lib" />
+    <orderEntry type="module" module-name="v4" />
+    <orderEntry type="module" module-name="LewaThemeLib" />
+    <orderEntry type="module" module-name="bridge" />
+    <orderEntry type="module" module-name="benchmarks" />
+    <orderEntry type="module" module-name="coretests" />
+    <orderEntry type="module" module-name="telephonytests" />
+    <orderEntry type="module" module-name="core2" />
+    <orderEntry type="module" module-name="LewaCamera" />
+    <orderEntry type="module" module-name="main" />
+    <orderEntry type="module" module-name="escape" />
+    <orderEntry type="module" module-name="graphics" />
+    <orderEntry type="module" module-name="Camera2" />
+    <orderEntry type="module" module-name="dicttool" />
+    <orderEntry type="module" module-name="systemproperties" />
+    <orderEntry type="module" module-name="telephony1" />
+    <orderEntry type="module" module-name="graphicstests" />
+    <orderEntry type="module" module-name="LewaDownloadProvider" />
+    <orderEntry type="module" module-name="actionbar_4.4" />
+    <orderEntry type="module" module-name="inputmethodtests" />
+    <orderEntry type="module" module-name="test" />
+    <orderEntry type="module" module-name="core" />
+  </component>
+</module>

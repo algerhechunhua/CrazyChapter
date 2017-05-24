@@ -1,0 +1,16 @@
+#!/bin/bash
+
+rm_file=$1
+#src_content=$2
+#dir_content=$3
+
+#echo "from_file=$from_file"
+#echo "src_content=$src_content"
+#echo "dir_content=$dir_content"
+
+#example
+# find -name '*.java'|xargs perl -pi -e 's|com.lewa.crazychapter11|com.lewa.crazychapter22|g'
+
+#find -iname ".git" | xargs rm -rf
+#./rmfile *.git
+find -iname "${rm_file}" | xargs rm -rf
